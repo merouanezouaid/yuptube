@@ -1,0 +1,15 @@
+<header class="site-head">
+    <h1 class="h2 mb-4 title">YupTube</h1>
+    {{!-- <h4 class="description">By Kaito</h4> --}}
+    <p class="description">Download your favorite videos without annoying inappropriate popups</p>
+</header>
+<div class="container content-wrap">
+    <div class="row justify-content-center align-items-start">
+        <div class="col">
+            <form class="down-form" name="youtube-download" method="post" action="/video">
+                <input type="url" name="url" placeholder="https://www.youtube.com/watch?v=kQW81ty6QFg" required class="form-control form-control-lg enter-links"/>
+                <button type="submit" class="btn btn-success mt-3 enter-links">Generate Links</button>
+            </form>
+        </div>
+    </div>
+</div>

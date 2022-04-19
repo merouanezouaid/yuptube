@@ -1,0 +1,25 @@
+{
+  "name": "yuptube",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "DEBUG=yuptube:* npm start"
+  },
+  "dependencies": {
+    "@microlink/mql": "^0.10.19",
+    "bin-version-check-cli": "^3.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "downloadjs": "^1.4.7",
+    "express": "~4.16.1",
+    "ffmpeg": "^0.0.4",
+    "hbs": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "youtube-dl-exec": "^2.0.11"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

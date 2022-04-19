@@ -1,0 +1,36 @@
+<div class="container content-wrap">
+    <div class="mb-4">
+        <a href="/" class="btn btn-secondary">Go Back</a>
+    </div>
+        {{#if error}}
+        <p class="links">{{error}}</p>
+        {{else}}
+        <div class="d-flex justify-content-center">
+            <div class="col">
+               <img src={{meta.formats.[0].image.url}} style="max-width:100%;height:auto;" alt="thumbnail">
+                {{!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/{{meta.id}}" frameborder="0" allowfullscreen></iframe> --}}
+            </div>
+        </div>
+            <br/>
+        <div class="d-flex justify-content-center">
+            <div class="col-6">
+                <h4 class="h5 mb-4 font-weight-bold links">Download Links</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="{{meta.formats.[0].audio.url}}" style="font-size: 12px">High Quality audio
+                            <div class="small">Ext: Audio | Size: {{meta.formats.[0].audio.size}}</div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{{meta.formats.[1].video.url}}" style="font-size: 12px">High Quality video
+                            <div class="small">Ext: {{meta.formats.[1].video.type}} | Size: {{meta.formats.[1].video.size}}</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {{/if}}
+</div>
+</div>
+
+
